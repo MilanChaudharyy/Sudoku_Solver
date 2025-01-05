@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script defer src="/static/js/app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Sudoku Solver</h1>
+        <div id="sudoku-grid">
+            <!-- The grid will be dynamically created using JavaScript -->
+        </div>
+        <div class="controls">
+            <button id="solve">Solve</button>
+            <button id="clear">Clear</button>
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="Easy">Easy</option>
+                <option value="Medium">Medium</option>
+                <option value="Hard">Hard</option>
+            </select>
+            <button id="generate">Generate Puzzle</button>
+        </div>
+    </div>
+</body>
+</html>

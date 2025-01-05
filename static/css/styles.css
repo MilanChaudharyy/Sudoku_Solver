@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#sudoku-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 1px;
+    background-color: black;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+#sudoku-grid input {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Highlight the border between row 3 and row 4 */
+#sudoku-grid input:nth-child(-n+27):nth-child(n+19) {
+    border-top: 3px solid black;
+}
+
+/* Highlight the border between row 6 and row 7 (new rule) */
+#sudoku-grid input:nth-child(n+55):nth-child(-n+63) {
+    border-top: 3px solid black;
+}
+
+/* Style for the borders between columns */
+#sudoku-grid input:nth-child(3n+1):nth-child(n+1) {
+    border-left: 3px solid black;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button, select {
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button:hover, select:hover {
+    background-color: #f0f0f0;
+}
+
+button#solve {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button#clear {
+    background-color: #F44336;
+    color: white;
+}
+
+button#generate {
+    background-color: #3b5998;
+    color: white;
+}
