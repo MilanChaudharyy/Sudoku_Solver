@@ -39,7 +39,7 @@ h1 {
 }
 
 /* Highlight the border between row 3 and row 4 */
-#sudoku-grid input:nth-child(-n+27):nth-child(n+19) {
+#sudoku-grid input:nth-child(-n+36):nth-child(n+28) {
     border-top: 3px solid black;
 }
 
